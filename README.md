@@ -4,7 +4,7 @@ Python utility to interface with Ericsson Chatboard CHA-10 tiny keyboard
 --- 
 Ever wanted to type with '90s Erricson CHA-10 rubber QWERTY keyboard? Me neither! But it costs so little that I couldn't resist.
 
-I figured this out without an actuall phone, so the info might not be accurate. There are so many quirks, that I'm curious how it works with a real phone.
+I figured this out without an real phone, so the info might not be accurate. There are so many quirks, that I'm curious how it actually works with a real Ericsson phone.
 
 ## Hardware
 The keyboard talks serial 9600 8N1, pinout as follows:
