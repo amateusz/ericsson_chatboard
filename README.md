@@ -8,15 +8,16 @@ I figured this out without an actuall phone, so the info might not be accurate. 
 
 ## Hardware
 The keyboard talks serial 9600 8N1, pinout as follows:
-<insert image>
+_image_
   
   ## Software
   It talks AT commands, it poses as… a Mobile Equipment keyboard. It simulates keypresses on a telephone keypad.
-  You heard me right, it "presses" the number keys, to get you to the desired letter.
-  I found key the [keymap of Ericsson T18z (page 22)](https://data2.manualslib.com/pdf2/41/4001/400047-ericsson/t18z.pdf?450a6521678afdc25a1fc91d48d4df46) to be quite spot-on.
-  For example pressing the key `1` cycles through this sequence: ` -?!,.:;"\'<=>()1',`
-  
-  In terms of responding to the keyboard, I found that we only need to ACK anything it sends with `OK`
+  You heard me right, it "presses" numeric keys few times, to get you to the desired letter.
+  I found [a keymap of the Ericsson T18z (page 22)](https://data2.manualslib.com/pdf2/41/4001/400047-ericsson/t18z.pdf?450a6521678afdc25a1fc91d48d4df46) to be quite spot-on.
+  ### Rx
+  For example pressing the key `1` cycles through this sequence: `␣-?!,.:;"\'<=>()1',`. Eg. pressing `?` key given you `111` on the serial. Wrapped in a AT command _elaborate_
+  ### Tx
+  In terms of communication back to the keyboard, I found that we only need to ACK anything it sends with `OK`
   
   ## Quirks
 There are many quirks:
