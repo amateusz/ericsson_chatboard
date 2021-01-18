@@ -17,7 +17,8 @@ I've connected mine to a USB↔RS232 TTL adapter
   You heard me right, it "presses" numeric keys few times, to get you to the desired letter.
   I found [a keymap of the Ericsson T18z (page 22)](https://data2.manualslib.com/pdf2/41/4001/400047-ericsson/t18z.pdf?450a6521678afdc25a1fc91d48d4df46) to be quite spot-on.
   ### Rx
-  For example pressing the key `1` cycles through this sequence: `␣-?!,.:;"\'<=>()1',`. Eg. pressing `?` key given you `111` on the serial. Wrapped in a AT command _elaborate_
+  For example pressing the key `1` cycles through this sequence: `␣-?!,.:;"\'<=>()1',`.
+  Eg. pressing `?` key gives you `111` on the serial. (actually: `AT+CKPD="111"`)
   ### Tx
   In terms of communication back to the keyboard, I found that we only need to ACK anything it sends with `OK`
   
