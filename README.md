@@ -29,7 +29,8 @@ There are many quirks:
 - pressing `SMS` key or `eMail` key causes the keyboard to enter text mode
 - there is only one case (size). `shift` key is used to enter special characters printer above keys. But since we have it working, we could replace those special chars with uppercase alpha letters
 - the keyboard stall sometimes for some time, queueing keypresses, then releases it in a burst.
-- holding `YES`/`NO` is a separate key, which is nice, **but** it causes the keyboard to return to numeric mode. I've mapped longpressing of `YES` to enter.
+- holding `YES`/`NO` doubles as a separate key, which is nice, **but** it causes the keyboard to return to numeric mode. 
+Since I've mapped longpressing of `YES` to enter, you have to press `SMS` key every time you longpress `YES`… quirks!
 
 I planned to use it as a quick snap on keyboard for Raspberry Pis, but it is so bad, that, I won't. I event though about writing a kernel module eventually ← Haha
 
