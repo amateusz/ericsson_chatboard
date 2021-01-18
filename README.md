@@ -9,6 +9,8 @@ I figured this out without an actuall phone, so the info might not be accurate. 
 ## Hardware
 The keyboard talks serial 9600 8N1, pinout as follows:
 _image_
+
+I've connected mine to a USB↔RS232 TTL adapter
   
   ## Software
   It talks AT commands, it poses as… a Mobile Equipment keyboard. It simulates keypresses on a telephone keypad.
