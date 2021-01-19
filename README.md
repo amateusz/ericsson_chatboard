@@ -2,7 +2,8 @@
 Python utility to interface with Ericsson Chatboard CHA-10 tiny keyboard
 
 --- 
-## Ever wanted to type with '90s Erricson CHA-10 rubber QWERTY keyboard? Me neither! But it costs so little that I couldn't resist.
+
+_Ever wanted to type with '90s Erricson CHA-10 rubber QWERTY keyboard? Me neither! But it costs so little that I couldn't resist._
 
 ---
 
@@ -33,10 +34,11 @@ There are many quirks:
 - when pressing a key twice in a row, the keyboard adds `1c` (or `0c`) before the second sequence, to finish "entering" of the current character. `1c` means `space, backspace`
 - pressing `SMS` key or `eMail` key causes the keyboard to enter text mode
 - there is only one case (size). `shift` key is used to enter special characters printer above keys. But since we have it working, we could replace those special chars with uppercase alpha letters
-- the keyboard stall sometimes for some time, queueing keypresses, then releases it in a burst.
+- the keyboard stalls sometimes for few seconds time, queues keypresses, then releases them in a burst.
 - holding `YES`/`NO` doubles as a separate key, which is nice, **but** it causes the keyboard to return to numeric mode. 
-Since I've mapped longpressing of `YES` to enter, you have to press `SMS` key every time you longpress `YES`… quirks!
+Since I've mapped longpressing of `YES` to enter, you have to press `SMS` key (switch to alpha mode) every time you longpress `YES`… quirks!
 
 I planned to use it as a quick snap on keyboard for Raspberry Pis, but it is so bad, that, I won't. I event though about writing a kernel module eventually ← Haha
 
-Anyone knows a list of tiny keyboards? X360 had some attached to the gamepads.
+---
+Anyone knows a list of tiny keyboards? Xbox 360 had one of those attached to the gamepad, 
